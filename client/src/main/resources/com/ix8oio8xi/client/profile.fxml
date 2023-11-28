@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="center" spacing="10" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+
+    <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Profile" />
+
+    <HBox spacing="10" alignment="center">
+        <Label text="L1:" />
+        <TextField fx:id="fromField" promptText="File 1 location" onAction="#enterFrom" />
+    </HBox>
+
+    <HBox spacing="10" alignment="center">
+        <Label text="L2:" />
+        <TextField fx:id="toField" promptText="File 2 location" onAction="#doAction" />
+    </HBox>
+
+    <HBox spacing="10" alignment="center">
+        <ChoiceBox fx:id="operations" prefWidth="150.0" />
+        <Button text="Do" onAction="#doAction" />
+    </HBox>
+
+    <Label fx:id="errorLabel" style="-fx-font-size: 10px; -fx-font-style: italic; -fx-text-fill: red;" />
+</VBox>
